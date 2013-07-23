@@ -14,7 +14,9 @@ public class ThreadExecutor extends java.util.concurrent.ThreadPoolExecutor {
  private static ThreadExecutor instance;
  
  private ThreadExecutor() {
+	// Passing the size information to the thread pool executor super class
      super(defaultCorePoolSize, defaultMaximumPoolSize, defaultKeepAliveTime, defaultTimeUnit, workQueue);
+	 
  }
  
  public synchronized static ThreadExecutor getInstance() {
