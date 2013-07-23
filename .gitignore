@@ -1,0 +1,16 @@
+#PMD
+reports
+
+#ROO
+log.roo
+
+#Spring
+application.log*
+.springBeans
+.settings
+.classpath
+.project
+target
+.DS_Store
+/.springBeans
+.bak
